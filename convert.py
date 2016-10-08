@@ -37,7 +37,8 @@ local assets = {assets}
 function InitAnimation()
     for i, file in ipairs(assets) do
         for j, img_file in ipairs(file.file) do
-            img_file.img = love.graphics.newImage("{folder_name}"..img_file.name)
+            img_file.img = love.graphics.newImage("{folder_name}"..img_file.name, {{linear=true,mipmaps=true}})
+            img_file.img:setMipmapFilter("linear", 0)
         end
     end
 end

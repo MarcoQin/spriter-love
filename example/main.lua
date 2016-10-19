@@ -2,7 +2,7 @@ Spriter = require("spriter")
 
 function love.load()
     love.graphics.setBackgroundColor(255, 255, 255)
-    anim = Spriter("woodie/woodie.lua")
+    anim = Spriter("mark/mark.lua")
     names = anim:getAnimNames()
     for i, name in pairs(names) do
         print (name)
@@ -33,5 +33,5 @@ function love.update(dt)
 end
 
 function love.draw()
-    anim:draw(400, 400)
+    anim:draw(400, 400, 0, 0.5)
 end

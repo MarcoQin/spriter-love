@@ -304,7 +304,7 @@ function Spriter:anglesToRadians( angle)
         return 0
     end
     return - angle * math.pi /  180
-  end --updateIds
+end --updateIds
 
 
 return Spriter
